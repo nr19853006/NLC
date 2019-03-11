@@ -1,0 +1,40 @@
+Home (M)
+ Why Us (C)
+ Getting Started (C)
+
+About (M + P) 
+	 
+Services (M)
+	Web Development (P) **1
+	Mobile App Development (P)
+	Windows App (P)
+	Graphics and Web Design (P)
+	Application Maintenance and customization (P)
+	Integration Services (P)
+	MIS and Data Entry (P)
+	Software Testing
+	System Automation
+
+Blogs (M + P 
+Case Study (M + P) - SEO
+Articles (M + P) - SEO
+**Customer Stories (Parked till we get clients) (P)
+Solutions (M)
+	 Industries (Domains) (P)
+	 Hiring Models (Our models) (P) **2
+	 Development Models (P) **3
+Careers (M + P)
+FAQ (M + P)
+Contact (M + P)
+ Social Media (Linkdin, Twitter, FB, Google) (C)
+ Skype (C)
+ Telephone (C)**
+ Email (C)
+ 
+
+--------------------------------------
+
+**1 PHP,  Python, C++, DotNet,  VB.NET,  ASP.NET, ASP , AngularJS, Angular 2+ , ReactJS)
+**2 Hourly Contract, Monthly, Part time, Project Mgmt - fixed cost, MaNAGED and dedicated Services
+**3 Agile/SCRUM, SDLC
+** Later on
