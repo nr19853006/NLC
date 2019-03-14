@@ -14621,7 +14621,7 @@ z-index: 10;
 .header-content {
 float: left;
 height: 100%;
-padding: 12% 140px 140px;
+padding: 3% 140px 140px;
 text-align: center;
 width: 100%;
 }
@@ -14636,7 +14636,7 @@ font-weight: normal;
 line-height: 93px;
 }
 .header-btn-area{
-margin-top: 30%;
+margin-top: 10px;
 float: left;
 display: inline;
 width: 100%;
