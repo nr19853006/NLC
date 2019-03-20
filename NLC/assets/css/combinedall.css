@@ -14631,9 +14631,9 @@ text-align: center;
 width: 100%;
 }
 .header-content h2 {
-font-size: 80px;
+font-size: 60px;
 font-weight: bold;
-text-transform: uppercase;
+text-transform: none;
 line-height: 80px;
 }
 .header-content h2 span {
@@ -14641,7 +14641,7 @@ font-weight: normal;
 line-height: 93px;
 }
 .header-btn-area{
-margin-top: 10px;
+margin-top: 45px;
 float: left;
 display: inline;
 width: 100%;
