@@ -1,0 +1,37 @@
+Advertisement...  Image with developers
+1 of these will come on top of the banner
+	>Hire best guys. 1 stop solutions for you etc
+	>Home of the world’s best offshore teams
+	>The World's Best Dev Teams at Your Fingertips
+	>Hire the top 3% of freelance developers in the UK.
+	>HIRE MOTIVATED DEVELOPERS 
+	READY TO JOIN YOUR TEAM
+	>Hire better developers faster.
+	Indorse saves you time and money.
+	Our innovative approach relies on a community of experts to assess potential candidates faster and more accurate than ever before.
+	So you can make the right decision, right away.
+	>Skip the frustration of hiring the wrong developer, missing deadlines and going over-budget
+
+Welcome section (punchlines)
+(
+About Us
+HireDeveloper is a globally-trusted web and mobile app development company with headquarters based in Newcastle, UK.
+Our clients range from early-stage startups to large enterprises across a wide range of industries including retail, financial, logistics, education, healthcare, sports, travel and more.
+We have a strong focus on client satisfaction and in providing highly-skilled developers to produce quality end-to-end web and mobile app development solutions.)
+
+Why us/Achievements
+>Toptal connects the top 3% of freelance talent all over the world. 
+
+Technical skills brief/Services overview
+Hiring process overview /how does it work
+working model overview (Agile and other methodologies)
+Client FAQs
+Contact
+-----------------------------------------------------------------
+
+Menu: must be visible on top while scrolling too
+contact details must be visible too 
+Skype Video call
+Email address
+Request Call back
+Phone numbers
