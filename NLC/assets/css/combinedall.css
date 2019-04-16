@@ -12712,7 +12712,7 @@ Template Design By MarkUps.
 Author URI : http://www.markups.io/
 ========================================*/
 .header-content h2 span {
-  color: #37c6f5;
+  color: #ffffff;
 }
 .knowmore-btn:hover,
 .knowmore-btn:focus,
@@ -14631,15 +14631,19 @@ text-align: center;
 width: 100%;
 }
 .header-content h2 {
-font-size: 60px;
+font-size: 52px;
 font-weight: bold;
 text-transform: none;
-line-height: 80px;
+line-height: 20px;
+padding-top: 250px;
 }
 .header-content h2 span {
-font-weight: normal;
+font-weight: 500;
 line-height: 93px;
+font-size: 26px;
+font-family: "Open Sans"
 }
+
 .header-btn-area{
 margin-top: 45px;
 float: left;
