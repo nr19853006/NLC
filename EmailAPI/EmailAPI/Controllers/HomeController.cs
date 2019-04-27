@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -33,9 +33,9 @@ namespace EmailAPI.Controllers
                 using (MailMessage mail = new MailMessage())
                 {
                     mail.From = new MailAddress(emailFromAddress);
-                    mail.To.Add(emailModel.EmailTo);
-                    mail.Subject = subject;
-                    mail.Body = emailModel.MessageBody;
+                    mail.To.Add(emailFromAddress);
+                    mail.Subject = subject + " from client: "+ emailModel.ClientName;
+                    mail.Body = "ClientEmail: "+ emailModel.ClientEmail+"; Client Contact: "+emailModel.ClientTelephone+"; Client Requirement: "+emailModel.ClientRequirement;
                     mail.IsBodyHtml = true;
                     //mail.Attachments.Add(new Attachment("D:\\TestFile.txt"));//--Uncomment this to send any attachment  
                     using (SmtpClient smtp = new SmtpClient(smtpAddress, portNumber))
@@ -49,22 +49,24 @@ namespace EmailAPI.Controllers
             }
             catch (Exception e)
             {
-                return "Failed";
+                return e.Message+ "Failed 1";
             }
-            return "Failed";
+            return "Failed 2";
         }
 
 
         [HttpGet]
         public string SendEmailGet()
         {
-            return "sent";
+            return "sent get";
         }
     }
 
     public class EMailModel
     {
-        public string EmailTo { get; set; }
-        public string MessageBody { get; set; }
+		public string ClientName { get; set; }
+		public string ClientEmail { get; set; }
+		public string ClientTelephone { get; set; }
+		public string ClientRequirement { get; set; }
     }
 }
