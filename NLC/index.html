@@ -6,135 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>NLC : Contact</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico" />
+  <title>NLC</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/icon" />
   <link rel="stylesheet" href="./assets/css/combinedall.css" />
-  <script src="./assets/js/jquery3.3.min.js"></script>
-
-
-
-  <style>
-    .contact-left h4 {
-      color: black !important;
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 17px;
-    }
-
-    .single-address h4 {
-      color: black !important;
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 17px;
-    }
-
-    .single-address p {
-      color: black !important;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    .contact-left h2 {
-      color: black !important;
-      font-size: 35px;
-      margin-bottom: 35px;
-    }
-
-    .contact-right h2 {
-      color: black !important;
-      font-size: 35px;
-      margin-bottom: 48px;
-    }
-
-    .contact-form .form-group input {
-      background: white;
-      color: black !important;
-      font-size: 20px;
-      border: 1px solid #d3cece;
-      border-radius: 0;
-      height: 45px;
-      margin-bottom: 24px;
-    }
-
-    .contact-form .form-group textarea {
-      color: black !important;
-      background: white;
-      border: 1px solid #d3cece;
-      border-radius: 0;
-      height: 190px;
-    }
-  </style>
-  <script>
-    $(document).ready(function () {
-
-      $('#BtnSubmitEnquiry').click(function (e) {
-
-        $('#preloader').removeAttr("style");
-        $('.loader').removeAttr("style");
-
-        var EMailModel = {
-          ClientName: $('#ClientName').val(),
-          ClientEmail: $('#ClientEmail').val(),
-          ClientTelephone: $('#ClientTelephone').val(),
-          ClientRequirement: $('#ClientRequirement').val()
-        }
-        $.ajax({
-          type: 'POST',
-          url: 'http://localhost/EmailAPI/Home/SendEmail',
-          contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-          data: EMailModel,
-          xhrFields: {
-            withCredentials: false
-          },
-          headers: {
-          },
-          success: function (e) {
-            debugger;
-            $('#preloader').css('display', 'none');
-            $('#loader').css('display', 'none');
-          },
-          error: function (e) {
-            debugger;
-            $('#preloader').css('display', 'none');
-            $('#loader').css('display', 'none');
-          }
-        });
-      });
-
-      $('#BtnSubmitEnquiryUrgent').click(function (e) {
-        $('#preloader').removeAttr("style");
-        $('.loader').removeAttr("style");
-
-        var Emaildata = {
-          ClientName: $('#ClientNameUrgent').val(),
-          ClientEmail: 'UrgentCall',
-          ClientTelephone: $('#ClientTelePhoneUrgent').val(),
-          ClientRequirement: 'UrgentCall'
-        }
-
-        $.ajax({
-          type: 'POST',
-          url: 'http://localhost/EmailAPI/EmailAPI/Home/SendEmail',
-          contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-          data: Emaildata,
-          xhrFields: {
-            withCredentials: false
-          },
-          headers: {
-          },
-          success: function (e) {
-            $('#preloader').css('display', 'none');
-            $('#loader').css('display', 'none');
-          },
-          error: function (e) {
-            $('#preloader').css('display', 'none');
-            $('#loader').css('display', 'none');
-          }
-        });
-      });
-    });
-  </script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -154,32 +28,62 @@
   <!-- SCROLL TOP BUTTON -->
   <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
   <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section-->
+  <header id="header" style="background-color: #0F9FFA;  background-image: url(assets/images/ProgrammingLap.jpg);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 969px;
+  position: relative;">
+    <div class="header-inner">
+      <div class="header-overlay">
+        <div class="header-content">
+          <h2>
+            “Professional, Flexible, High Standard”
+            <br>
+            <span>The Way Our Clients Like To Describe Our Developers</span>
+
+          </h2>
+          <div class="header-btn-area">
+            <a class="knowmore-btn" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header section -->
+
   <!-- Start menu section -->
   <section id="menu-area">
     <nav class="navbar navbar-default main-navbar" role="navigation">
+      <div class="navbar-header">
+        <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="index.html"><img src="assets/images/LogoNLC.png" alt="logo"></a>
+      </div>
+
       <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->
-          <a class="navbar-brand logo" href="index.html"><img src="assets/images/LogoNLC.png" alt="logo"></a>
-        </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Client Stories</a></li>
-            <li><a href="#">Bussiness Models </a></li>
-            <li class="active"><a href="#">CONTACT</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Client Stories</a></li>
+            <li><a href="#pricing-table">Bussiness Models </a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
           </ul>
         </div>
-        <!--/.nav-collapse -->
+        <!--nav-collapse -->
         <div class="search-area">
           <form action="">
             <input id="search" name="search" type="text" placeholder="What're you looking for ?">
@@ -189,119 +93,916 @@
       </div>
     </nav>
   </section>
-
   <!-- End menu section -->
-  <section id="pricing-table">
+
+  <!-- Start about section -->
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="pricing-table-area">
-            <div class="title-area" style="color:black;">
-              <h2 class="tittle">Connect with us</h2>
+          <!-- Start welcome area -->
+          <div class="welcome-area">
+            <div class="title-area">
+              <h2 class="tittle">Welcome to <span>NLC</span></h2>
               <span class="tittle-line"></span>
-              <p>Free consulting on your requirement</p>
-              <p>Industry leading advice on product-market fit</p>
-              <p>A business expert will get in touch with you in 24 hrs</p>
+              <p>The pool of the most talented and brilliant software developers who are more productive
+                than any other freelancers out there</p>
+            </div>
+            <div class="welcome-content">
+              <ul class="wc-table">
+                <li>
+                  <div class="single-wc-content wow fadeInUp">
+                    <span class="fa fa-users wc-icon"></span>
+                    <h4 class="wc-tittle">Reliablility</h4>
+                    <p>The reliability on our ethics has been the benchmark of our work.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="single-wc-content wow fadeInUp">
+                    <span class="fa fa-sellsy wc-icon"></span>
+                    <h4 class="wc-tittle">One Stop solution</h4>
+                    <p>Vast domains and technologies under a single roof.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="single-wc-content wow fadeInUp">
+                    <span class="fa fa-line-chart wc-icon"></span>
+                    <h4 class="wc-tittle">Flexibility</h4>
+                    <p>Flexibility of work, client reporting, payment structure, work models with
+                      desired level of customization.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="single-wc-content wow fadeInUp">
+                    <span class="fa fa-bus wc-icon"></span>
+                    <h4 class="wc-tittle">Cost Efficiency</h4>
+                    <p>Our client have testified that hiring experts from our team have reduced the cost of project up
+                      to 40%.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End welcome area -->
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- End about section -->
+
+
+  <!-- Start call to action -->
+  <section id="call-to-action">
+    <img src="assets/images/call-to-action-bg.png" alt="img">
+    <div class="call-to-overlay">
+      <div class="container">
+        <div class="call-to-content wow fadeInUp">
+          <h2 style="font-weight:500 !important;">Leave behind the frustration of hiring the wrong developer, missing
+            deadlines and going over-budget</h2>
+          <a href="#" class="button button-default" data-text="GET STARTED"><span>GET STARTED</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End call to action -->
+
+
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about-area">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="about-right wow fadeInRight">
+                  <div class="title-area">
+                    <h2 class="tittle">Why <span>NLC</span></h2>
+                    <!-- <span class="tittle-line"></span>
+                    <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illotore itatis et quasi architecto beatae vitae dicta sunt
+                      explicabo.</p>
+
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                      magni dolores e</p>
+                    <div class="about-btn-area">
+                      <a href="#" class="button button-default" data-text="KNOW MORE"><span>KNOW MORE</span></a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <img src="assets/images/why2.jpg" alt="img" style="width: 100%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Start call to action -->
+  <section id="call-to-action">
+    <img src="assets/images/call-to-action-bg.png" alt="img">
+    <div class="call-to-overlay">
+      <div class="container">
+        <div class="call-to-content wow fadeInUp">
+          <h2 style="font-weight:500 !important;">Resources that are Hand-Picked By Technical Experts</h2>
+          <a href="#" class="button button-default" data-text="GET STARTED"><span>GET STARTED</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End call to action -->
+  <!-- Start service section -->
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="service-area">
+            <div class="title-area">
+              <h2 class="tittle">Services we offer</h2>
+              <span class="tittle-line"></span>
+              <!-- <p>Choose from the team of programmers battle tested and ready to be hired</p> -->
+            </div>
+            <!-- service content -->
+            <div class="service-content">
+              <ul class="service-table">
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-sort-amount-asc service-icon"></span>
+                    <h4 class="service-title">Web Apps</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-map-o service-icon"></span>
+                    <h4 class="service-title">Mobile Apps</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-rocket service-icon"></span>
+                    <h4 class="service-title">Desktop Apps</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-edit service-icon"></span>
+                    <h4 class="service-title">UX/UI Design</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-car service-icon"></span>
+                    <h4 class="service-title">Data Entry/MIS</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-support service-icon"></span>
+                    <h4 class="service-title">App Maintenance</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-bank service-icon"></span>
+                    <h4 class="service-title">CMS, CRM</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-6">
+                  <div class="single-service wow slideInUp">
+                    <span class="fa fa-user-secret service-icon"></span>
+                    <h4 class="service-title">Automation</h4>
+                    <p>Click to view details</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- End service section -->
 
-  <!-- Start Contact section -->
-  <section id="contact" style="background-image:none;">
-    <div class="container">
 
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="contact-left wow fadeInLeft" style="background-color: rgba(170, 166, 166, 0.08)">
-            <h2>Contact us</h2>
-            <address class="single-address">
-              <h4>Phone</h4>
-              <p>Phone: (123) 456 7890</p>
-              <p>Fax: (123) 456 7890</p>
-            </address>
-            <address class="single-address">
-              <h4>E-Mail</h4>
-              <p>Support: Support@NLC.com</p>
-              <p>Sales: sales@NLC.com</p>
-            </address>
-            <address class="single-address">
-              <h4>Skype</h4>
-              <p>nlc.support</p>
-              <p>nlc.sales</p>
-            </address>
-            <address class="single-address">
-              <h4>IM</h4>
-              <p>Support: Support@NLC.com</p>
-              <p>Sales: sales@NLC.com</p>
-              <br>
-              <br>
-            </address>
-
-          </div>
-        </div>
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <div class="contact-right wow fadeInRight" style="background-color: rgba(170, 166, 166, 0.08)">
-            <h2>Brief us</h2>
-            <form action="" class="contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Please enter name" id="ClientName">
+  <!-- Start counter section -->
+  <section id="counter">
+    <img src="assets/images/counter-bg.jpg" alt="img">
+    <div class="counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Start counter area -->
+            <div class="counter-area">
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="single-counter">
+                  <span class="fa fa-users"></span>
+                  <div class="counter-count">
+                    <span class="counter">22</span>
+                    <p>Happy Clients</p>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Please enter Email" id="ClientEmail">
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="single-counter">
+                  <span class="fa fa-bus"></span>
+                  <div class="counter-count">
+                    <span class="counter">37</span>
+                    <p>Project Delivered</p>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Please enter phone no" id="ClientTelephone">
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="single-counter">
+                  <span class="fa fa-twitter"></span>
+                  <div class="counter-count">
+                    <span class="counter">2</span>
+                    <p>Yrs Of Expertise</p>
+                  </div>
+                </div>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="Please enter your requirement(s)"
-                  id="ClientRequirement"></textarea>
+              <div class="col-md-3 col-sm-6 col-xs-6">
+                <div class="single-counter">
+                  <span class="fa fa-tasks"></span>
+                  <div class="counter-count">
+                    <span class="counter">70</span>
+                    <p>OnGoing Projects</p>
+                  </div>
+                </div>
               </div>
-              <button type="button" data-text="SUBMIT" class="button button-default"
-                id="BtnSubmitEnquiry"><span>SUBMIT</span></button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- End counter section -->
 
-  <section id="contact" style="background-image:none;">
+  <!-- Start Team action -->
+  <section id="team">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="contact-left wow fadeInLeft" style="background-color: rgba(170, 166, 166, 0.08)">
-            <h2>Need help right now?</h2>
-            <h4>Leave your name and number and we’ll get back to you within 2 hours.</h4>
-            <form action="" class="contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Please enter name" id="ClientNameUrgent">
-              </div>
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Please enter phone no" id="ClientTelePhoneUrgent">
-              </div>
-              <button type="button" data-text="SUBMIT" class="button button-default"
-                id="BtnSubmitEnquiryUrgent"><span>SUBMIT</span></button>
-            </form>
+        <div class="col-md-12">
+          <div class="team-area">
+            <div class="title-area">
+              <h2 class="tittle">How Hiring Works</h2>
+              <span class="tittle-line"></span>
+              <!-- <p>Simplest of proces for resource aquisition</p> -->
+            </div>
+            <!-- Start team content -->
+            <div class="team-content">
+              <ul class="team-grid">
+                <li>
+                  <div class="team-item team-img-1 wow fadeInUp">
+                    <div class="team-info">
+                      <p>Send us your requirement so we can analyze it. We would love to get on a call with you to
+                        exchange ideas and solutions instantly</p>
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-pinterest"></span></a>
+                      <a href="#"><span class="fa fa-rss"></span></a>
+                    </div>
+                  </div>
+                  <div class="team-address">
+                    <p>Lets talk about Your requirement</p>
+                    <span>1</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="team-item team-img-2 wow fadeInUp">
+                    <div class="team-info">
+                      <p>Based on the analysis, you get to choose from our experts. We would love to recommend too</p>
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-pinterest"></span></a>
+                      <a href="#"><span class="fa fa-rss"></span></a>
+                    </div>
+                  </div>
+                  <div class="team-address">
+                    <p>Screening</p>
+                    <span>2</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="team-item team-img-3 wow fadeInUp">
+                    <div class="team-info">
+                      <p>You can interview our experts. We will make it a hassle free discussion
+                      </p>
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-pinterest"></span></a>
+                      <a href="#"><span class="fa fa-rss"></span></a>
+                    </div>
+                  </div>
+                  <div class="team-address">
+                    <p>Interview</p>
+                    <span>3</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="team-item team-img-4 wow fadeInUp">
+                    <div class="team-info">
+                      <p>Our expert developers are ready to hire and hit the ground from day 1</p>
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-pinterest"></span></a>
+                      <a href="#"><span class="fa fa-rss"></span></a>
+                    </div>
+                  </div>
+                  <div class="team-address">
+                    <p>Kick start</p>
+                    <!-- <span>Senior designer</span> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- End team content -->
           </div>
         </div>
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <div class="contact-right wow fadeInRight" style="background-color: rgba(170, 166, 166, 0.08);color:black;">
-            <h3 style="font-size: 22px;font-weight: bold;">Or give us a call right now and talk to an expert developer.
-            </h3>
-            <h3 style="font-size: 22px;font-weight: bold;">0800 433 7990</h3>
+      </div>
+      <div class="row" style="margin-top: 10%;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pricing-table-area">
+              <div class="title-area">
+                <h2 class="tittle">Hiring is also many a times quicker</h2>
+                <span class="tittle-line"></span>
+
+
+              </div>
+              <div class="pricing-table-content">
+                <ul class="price-table">
+
+                  <li class="wow slideInUp">
+                    <div class="single-price">
+                      <h4 class="price-header"  style="
+                      background-color: #ffffff;
+                      border-top: none;
+                      border-left: 1px solid #e4e4e4;
+                      border-bottom: 1px solid #e4e4e4;">Stage</h4>
+                      <p style="border: none;">Requirement Analysis</p>
+                      <p style="border: none;">Candidates Shortlisted</p>
+                      <p style="border: none;">Contracts & Agreements</p>
+                      <p style="border: none;">Work Commences</p>
+                    </div>
+                  </li>
+                  <li class="wow slideInUp">
+                    <div class="single-price">
+                      <h4 class="price-header">Traditional Hiring</h4>
+                      <p>1 week</p>
+                      <p>2 weeks</p>
+                      <p>3 weeks</p>
+                      <p>4 weeks</p>
+                    </div>
+                  </li>
+                  <li class="wow slideInUp" style="font-weight: bold;">
+                    <div class="single-price standard-price">
+                      <h4 class="price-header">At NLC</h4>
+                      <p>2 hrs</p>
+                      <p>5 hrs</p>
+                      <p>1 day</p>
+                      <p>2 days</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="contact-right wow fadeInRight" style="background-color: rgba(170, 166, 166, 0.08);color:black;">
-            <h3 style="font-size: 22px;font-weight: bold;">Or send us an email now and let us know your vision.</h3>
-            <h3 style="font-size: 22px;font-weight: bold;">sales@NLC.com</h3>
+        </div>
+      </div>
+  </section>
+  <!-- Start Team action -->
+
+
+  <!-- Start Pricing Table section -->
+  <section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="pricing-table-area">
+            <div class="title-area">
+              <h2 class="tittle">Developer(s) Hiring Models</h2>
+              <span class="tittle-line"></span>
+              <p>We strive to provide our clients robust and flexible hiring models</p>
+            </div>
+            <div class="pricing-table-content">
+              <ul class="price-table">
+                <li class="wow slideInUp">
+                  <div class="single-price standard-price">
+                    <h4 class="price-header">Monthly/Part Time</h4>
+                    <!-- <span class="price-amount">Widely Opted for Small Projects</span> -->
+                    <p>Monthly Billing</p>
+                    <p>No Hidden Costs</p>
+                    <p>Pay Only For Measurable Work</p>
+                    <p>172 Production Hrs/Every Month</p>
+                    <p>No Set Up Fees</p>
+                    <p>Free Lead Supervision</p>
+                    <p>Daily Reporting</p>
+                    <!-- <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a> -->
+                  </div>
+                </li>
+                <!-- <li class="wow slideInUp">
+                  <div class="single-price">
+                    <h4 class="price-header">Hourly</h4>
+                    <p>Hourly Billing</p>
+                    <p>No Hidden Costs</p>
+                    <p>Pay Only For Measurable Work</p>
+                    <p>X Production Hours As Desired</p>
+                    <p>No Set Up Fees</p>
+                    <p>Free Lead Supervision</p>
+                    <p>Daily Reporting</p>
+                  </div>
+                </li> -->
+                <li class="wow slideInUp">
+                  <div class="single-price">
+                    <h4 class="price-header">P/Time</h4>
+                    <p>Monthly Billing</p>
+                    <p>No Hidden Costs</p>
+                    <p>Pay Only For Measurable Work</p>
+                    <p>88 Production Hrs/Every Month</p>
+                    <p>No Set Up Fees</p>
+                    <p>Free Lead Supervision</p>
+                    <p>Daily Reporting</p>
+                  </div>
+                </li>
+                <li class="wow slideInUp">
+                  <div class="single-price">
+                    <h4 class="price-header">Dedicated</h4>
+                    <p>Monthly Billing</p>
+                    <p>No Hidden Costs</p>
+                    <p>Pay Only For Measurable Work</p>
+                    <p>172 Production Hrs/Every Month</p>
+                    <p>No Set Up Fees</p>
+                    <p>Your Total Control</p>
+                    <p>Daily Reporting as Desired</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Table section -->
+
+  <!-- Start Pricing Table section -->
+  <section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="pricing-table-area">
+            <div class="title-area">
+              <h2 class="tittle">Project Models</h2>
+              <span class="tittle-line"></span>
+              <p>We have tried our best to provide our clients robust and flexible hiring models. We welcome your ideas
+                for your desired team</p>
+            </div>
+            <div class="pricing-table-content">
+              <ul class="price-table">
+                <li class="wow slideInUp" style="width:33% !important;">
+                  <div class="single-price standard-price">
+                    <h4 class="price-header">Fixed Cost</h4>
+                    <p>Billing With Milestones Achieved</p>
+                    <p>We Manage the whole Project</p>
+                    <p>Milestones Are Agreed Upon</p>
+                    <p>No Set Up Fees</p>
+                    <p>Free Lead Supervision</p>
+                    <p>Daily Reporting/Customized format</p>
+                  </div>
+                </li>
+                <li class="wow slideInUp" style="width:33% !important;">
+                  <div class="single-price">
+                    <h4 class="price-header">Project Monthly</h4>
+                    <p>Monthly Billing + No Hidden Costs</p>
+                    <p>We Manage the whole Project</p>
+                    <p>Milestones Are Agreed Upon</p>
+                    <p>No Set Up Fees</p>
+                    <p>Free Lead Supervision</p>
+                    <p>Daily Reporting/Customized format</p>
+                  </div>
+                </li>
+                <li class="wow slideInUp" style="width:33% !important;">
+                  <div class="single-price">
+                    <h4 class="price-header">Project Part Time</h4>
+                    <p>Monthly Billing + No Hidden Costs</p>
+                    <p>We Manage the whole Project</p>
+                    <p>Milestones Are Agreed Upon</p>
+                    <p>No Set Up Fees</p>
+                    <p>Free Lead Supervision</p>
+                    <p>Daily Reporting/Customized format</p>
+                  </div>
+                </li>
+                <!-- <li class="wow slideInUp">
+                  <div class="single-price">
+                    <h4 class="price-header">Dedicated</h4>
+                    <p>Monthly Billing With No Hidden Costs</p>
+                    <p>Pay Only For Measurable Work</p>
+                    <p>172 Production Hrs/Every Month</p>
+                    <p>No Set Up Fees</p>
+                    <p>Your Total Control</p>
+                    <p>Daily Reporting as Desired</p>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing Table section -->
+
+
+  <!-- Start Portfolio section -->
+  <!-- <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="portfolio-area">
+            <div class="title-area">
+              <h2 class="tittle">Recent portfolio</h2>
+              <span class="tittle-line"></span>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+            </div>
+            <div class="portfolio-content">
+              <div class="portfolio-menu">
+                <ul>
+                  <li class="filter" data-filter="all">All</li>
+                  <li class="filter" data-filter=".branding">Branding</li>
+                  <li class="filter" data-filter=".design">Design</li>
+                  <li class="filter" data-filter=".development">Development</li>
+                  <li class="filter" data-filter=".photography">Photography</li>
+                </ul>
+              </div>
+              <div id="mixit-container" class="portfolio-container">
+                <div class="single-portfolio mix branding">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small1.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big1.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix design">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small2.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix development">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small3.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big3.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix photography">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small4.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big4.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix photography">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small5.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big5.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix photography">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small6.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big6.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix photography">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small7.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big7.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-portfolio mix photography">
+                  <div class="single-item">
+                    <img src="assets/images/portfolio-img-small2.jpg" alt="img">
+                    <div class="single-item-content">
+                      <div class="portfolio-social-icon">
+                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i
+                            class="fa fa-eye"></i></a>
+                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
+                      </div>
+                      <div class="portfolio-title">
+                        <h4>Mobile application</h4>
+                        <span>UI Design</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End Portfolio section -->
+
+
+
+
+  <!-- Start Testimonial section -->
+  <section id="testimonial">
+    <img src="assets/images/testimonial-bg.jpg" alt="img">
+    <div class="counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Start Testimonial area -->
+            <div class="testimonial-area">
+              <div class="title-area">
+                <h2 class="tittle">What clients say about us</h2>
+                <span class="tittle-line"></span>
+              </div>
+              <div class="testimonial-conten">
+                <!-- Start testimonial slider -->
+                <div class="testimonial-slider">
+                  <!-- single slide -->
+                  <div class="single-slide">
+                    <p>I am very happy with the services of NLC.
+                      The choice made at the start has proved to be right.
+                    </p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/testimonial-image1.png" alt="img">
+                      <p>Jonna Hike</p>
+                      <span>United States, Theme forest</span>
+                    </div>
+                  </div>
+                  <!-- single slide -->
+                  <div class="single-slide">
+                    <p>
+                      My expectations are met. Feeling nice to have outsourced my work to such an organization.
+                    </p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/team-member2.png" alt="img">
+                      <p>Jarret Melvin</p>
+                      <span>United States, FreeCE</span>
+                    </div>
+                  </div>
+                  <div class="single-slide">
+                    <p>
+                      At hard times and with no vision of what the end product will be, the guys gave a good show
+                      and I am happy with the end result. Proffessionalism to the very best level.
+                    </p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/team-member2.png" alt="img">
+                      <p>Jacob Oommen</p>
+                      <span>United States, CG Facilities</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Testimonial section -->
+
+  <!-- Start from blog section -->
+  <!-- <section id="from-blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="from-blog-area">
+            <div class="title-area">
+              <h2 class="tittle">Our blog</h2>
+              <span class="tittle-line"></span>
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                placeat facere possimus, omnis voluptas assumenda est</p>
+            </div>
+            <div class="from-blog-content">
+              <div class="row">
+                <div class="col-md-4">
+                  <article class="single-from-blog">
+                    <figure>
+                      <a href="blog-single.html"><img src="assets/images/the-sky.jpg" alt="img"></a>
+                    </figure>
+                    <div class="blog-title">
+                      <h2><a href="blog-single.html">Here is the post title</a></h2>
+                      <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july
+                          2015</span></p>
+                    </div>
+                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+                    <div class="blog-footer">
+                      <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
+                      <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="single-from-blog">
+                    <figure>
+                      <a href="blog-single.html"><img src="assets/images/photographer.jpg" alt="img"></a>
+                    </figure>
+                    <div class="blog-title">
+                      <h2><a href="blog-single.html">Here is the post title</a></h2>
+                      <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july
+                          2015</span></p>
+                    </div>
+                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+                    <div class="blog-footer">
+                      <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
+                      <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-4">
+                  <article class="single-from-blog">
+                    <figure>
+                      <a href="blog-single.html"><img src="assets/images/sealand.jpg" alt="img"></a>
+                    </figure>
+                    <div class="blog-title">
+                      <h2><a href="blog-single.html">Here is the post title</a></h2>
+                      <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july
+                          2015</span></p>
+                    </div>
+                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
+                    <div class="blog-footer">
+                      <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
+                      <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End from blog section -->
+
+  <section id="client">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="client-area">
+            <ul class="client-table">
+              <li><img src="assets/images/envato.png" alt="client logo"></li>
+              <li><img src="assets/images/google.png" alt="client logo"></li>
+              <li><img src="assets/images/amazon.png" alt="client logo"></li>
+              <li><img src="assets/images/discovery.png" alt="client logo"></li>
+              <li><img src="assets/images/envato.png" alt="client logo"></li>
+              <li><img src="assets/images/tuenti.png" alt="client logo"></li>
+              <li><img src="assets/images/envato.png" alt="client logo"></li>
+              <li><img src="assets/images/google.png" alt="client logo"></li>
+              <li><img src="assets/images/amazon.png" alt="client logo"></li>
+              <li><img src="assets/images/discovery.png" alt="client logo"></li>
+              <li><img src="assets/images/envato.png" alt="client logo"></li>
+              <li><img src="assets/images/tuenti.png" alt="client logo"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Start Contact section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="contact-left wow fadeInLeft">
+            <h2>Contact with us</h2>
+            <address class="single-address">
+              <h4>Postal address:</h4>
+              <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+            </address>
+            <address class="single-address">
+              <h4>Headquarters:</h4>
+              <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+            </address>
+            <address class="single-address">
+              <h4>Phone</h4>
+              <p>Phone Number: (123) 456 7890</p>
+              <p>Fax Number: (123) 456 7890</p>
+            </address>
+            <address class="single-address">
+              <h4>E-Mail</h4>
+              <p>Support: Support@example.com</p>
+              <p>Sales: sales@example.com</p>
+            </address>
+          </div>
+        </div> -->
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="contact-right wow fadeInRight">
+            <h2>Please let us know your requirement</h2>
+            <form action="" class="contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Enter your query"></textarea>
+              </div>
+              <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- End Contact section -->
+  <!-- Start Google Map -->
+  <!-- <section id="google-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-37.8173306!2d144.9556518!5e0!3m2!1sen!2sbd!4v1442411159706"
+      width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section> -->
+  <!-- End Google Map -->
+
   <!-- Start Footer -->
   <footer id="footer">
     <div class="footer-top">
@@ -324,33 +1025,21 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Designed by <a rel="nofollow" href="http://www.markups.io/">MarkUps.io</a></p>
+      <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
     </div>
   </footer>
   <!-- End Footer -->
 
   <!-- initialize jQuery Library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!-- Bootstrap -->
+  <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
-  <!-- Slick Slider -->
   <script type="text/javascript" src="assets/js/slick.js"></script>
-  <!-- Counter -->
   <script type="text/javascript" src="assets/js/waypoints.js"></script>
   <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
-  <!-- mixit slider -->
   <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
-  <!-- Add fancyBox -->
   <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
-  <!-- Wow animation -->
   <script type="text/javascript" src="assets/js/wow.js"></script>
-
-  <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
-
-
-
 </body>
 
 </html>
