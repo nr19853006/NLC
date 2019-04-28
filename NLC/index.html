@@ -15,58 +15,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script>
-
-      // var Emaildata = {
-      //   EmailTo: 'n3006r@gmail.com',
-      //     MessageBody:'This is a test email'
-      // }
-  
-  
-      // $.ajax({
-      //   // The 'type' property sets the HTTP method.
-      //   // A value of 'PUT' or 'DELETE' will trigger a preflight request.
-      //   type: 'POST',
-      //   // The URL to make the request to.
-      //   url: 'http://localhost:51338/Home/SendEmail',
-      //   // The 'contentType' property sets the 'Content-Type' header.
-      //   // The JQuery default for this property is
-      //   // 'application/x-www-form-urlencoded; charset=UTF-8', which does not trigger
-      //   // a preflight. If you set this value to anything other than
-      //   // application/x-www-form-urlencoded, multipart/form-data, or text/plain,
-      //   // you will trigger a preflight request.
-      //   contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
-      //   data: Emaildata,
-      //   xhrFields: {
-      //     // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
-      //     // This can be used to set the 'withCredentials' property.
-      //     // Set the value to 'true' if you'd like to pass cookies to the server.
-      //     // If this is enabled, your server must respond with the header
-      //     // 'Access-Control-Allow-Credentials: true'.
-      //     withCredentials: false
-      //   },
-      //   headers: {
-      //     // Set any custom headers here.
-      //     // If you set any non-simple headers, your server must include these
-      //     // headers in the 'Access-Control-Allow-Headers' response header.
-      //   },
-      //   success: function (e) {
-      //     // Here's where you handle a successful response.
-      //     debugger;
-      //   },
-      //   error: function (e) {
-      //     // Here's where you handle an error response.
-      //     // Note that if the error was due to a CORS issue,
-      //     // this function will still fire, but there won't be any additional
-      //     // information about the error.
-      //   }
-      // });
-  
-    </script>
+  <script src="./assets/js/jquery.min.js"></script>
 </head>
-
 <body>
-
   <!-- BEGAIN PRELOADER -->
   <div id="preloader">
     <div class="loader">&nbsp;</div>
@@ -94,7 +45,7 @@
             “Professional, Flexible, High Standard”
             <br>
             <span>The Way Our Clients Like To Describe Our Developers</span>
-            
+
           </h2>
           <div class="header-btn-area">
             <a class="knowmore-btn" href="#">Get Started</a>
@@ -108,27 +59,26 @@
   <!-- Start menu section -->
   <section id="menu-area">
     <nav class="navbar navbar-default main-navbar" role="navigation">
+      <div class="navbar-header">
+        <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="index.html"><img src="assets/images/NLCLogo.png" alt="logo"></a>
+      </div>
+
       <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-            aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->
-          <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>
-        </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#service">SERVICE</a></li>
-            <li><a href="#portfolio">Client Stories</a></li>
-            <li><a href="#pricing-table">Bussiness Models </a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
           </ul>
         </div>
         <!--nav-collapse -->
@@ -162,23 +112,22 @@
                   <div class="single-wc-content wow fadeInUp">
                     <span class="fa fa-users wc-icon"></span>
                     <h4 class="wc-tittle">Reliablility</h4>
-                    <p>You can rely on us to get you exactly what you want.</p>
+                    <p>The reliability on our ethics has been the benchmark of our work.</p>
                   </div>
                 </li>
                 <li>
                   <div class="single-wc-content wow fadeInUp">
                     <span class="fa fa-sellsy wc-icon"></span>
                     <h4 class="wc-tittle">One Stop solution</h4>
-                    <p>You can find every requirements of yours being catered under the single roof of Rex
-                      proffessionals which cover vast domains and technologies</p>
+                    <p>Vast domains and technologies under a single roof.</p>
                   </div>
                 </li>
                 <li>
                   <div class="single-wc-content wow fadeInUp">
                     <span class="fa fa-line-chart wc-icon"></span>
                     <h4 class="wc-tittle">Flexibility</h4>
-                    <p>Choose from our various hiring models and get desired level of authorization over your employees
-                      and work. You can also make changes and we will be glad to do it for you</p>
+                    <p>Flexibility of work, client reporting, payment structure, work models with
+                      desired level of customization.</p>
                   </div>
                 </li>
                 <li>
@@ -186,7 +135,7 @@
                     <span class="fa fa-bus wc-icon"></span>
                     <h4 class="wc-tittle">Cost Efficiency</h4>
                     <p>Our client have testified that hiring experts from our team have reduced the cost of project up
-                      to 40%. Try it once and we expect the same results this time too</p>
+                      to 40%.</p>
                   </div>
                 </li>
               </ul>
@@ -208,7 +157,8 @@
     <div class="call-to-overlay">
       <div class="container">
         <div class="call-to-content wow fadeInUp">
-          <h2 style="font-weight:500 !important;">Leave the frustration of hiring the wrong developer, missing deadlines and going over-budget to the past</h2>
+          <h2 style="font-weight:500 !important;">Leave behind the frustration of hiring the wrong developer, missing
+            deadlines and going over-budget</h2>
           <a href="#" class="button button-default" data-text="GET STARTED"><span>GET STARTED</span></a>
         </div>
       </div>
@@ -224,11 +174,11 @@
         <div class="col-md-12">
           <div class="about-area">
             <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="about-right wow fadeInRight">
                   <div class="title-area">
-                    <h2 class="tittle">About <span>NLC</span></h2>
-                    <span class="tittle-line"></span>
+                    <h2 class="tittle">Why <span>NLC</span></h2>
+                    <!-- <span class="tittle-line"></span>
                     <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                       totam rem aperiam, eaque ipsa quae ab illotore itatis et quasi architecto beatae vitae dicta sunt
                       explicabo.</p>
@@ -237,47 +187,32 @@
                       magni dolores e</p>
                     <div class="about-btn-area">
                       <a href="#" class="button button-default" data-text="KNOW MORE"><span>KNOW MORE</span></a>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="about-right wow fadeInRight">
-                  <div class="title-area">
-                    <h2 class="tittle">About <span>NLC</span></h2>
-                    <span class="tittle-line"></span>
-                    <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                      totam rem aperiam, eaque ipsa quae ab illotore itatis et quasi architecto beatae vitae dicta sunt
-                      explicabo.</p>
 
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                      magni dolores e</p>
-                    <div class="about-btn-area">
-                      <a href="#" class="button button-default" data-text="KNOW MORE"><span>KNOW MORE</span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+        <img src="assets/images/why2.jpg" alt="img" style="width: 100%;">
       </div>
     </div>
   </section>
 
- <!-- Start call to action -->
- <section id="call-to-action">
-  <img src="assets/images/call-to-action-bg.png" alt="img">
-  <div class="call-to-overlay">
-    <div class="container">
-      <div class="call-to-content wow fadeInUp">
-        <h2 style="font-weight:500 !important;">Resources that are Hand-Picked By Technical Experts</h2>
-        <a href="#" class="button button-default" data-text="GET STARTED"><span>GET STARTED</span></a>
+  <!-- Start call to action -->
+  <section id="call-to-action">
+    <img src="assets/images/call-to-action-bg.png" alt="img">
+    <div class="call-to-overlay">
+      <div class="container">
+        <div class="call-to-content wow fadeInUp">
+          <h2 style="font-weight:500 !important;">Resources that are Hand-Picked By Technical Experts</h2>
+          <a href="#" class="button button-default" data-text="GET STARTED"><span>GET STARTED</span></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End call to action -->
+  </section>
+  <!-- End call to action -->
   <!-- Start service section -->
   <section id="service">
     <div class="container">
@@ -292,60 +227,60 @@
             <!-- service content -->
             <div class="service-content">
               <ul class="service-table">
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-sort-amount-asc service-icon"></span>
                     <h4 class="service-title">Web Apps</h4>
-                    <p>Click to view details</p>
+                    <a href="PWebApp.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-map-o service-icon"></span>
                     <h4 class="service-title">Mobile Apps</h4>
-                    <p>Click to view details</p>
+                    <a href="PMobileApp.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-rocket service-icon"></span>
                     <h4 class="service-title">Desktop Apps</h4>
-                    <p>Click to view details</p>
+                    <a href="PDeskTopApp.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-edit service-icon"></span>
-                    <h4 class="service-title">UX Design</h4>
-                    <p>Click to view details</p>
+                    <h4 class="service-title">UX/UI Design</h4>
+                    <a href="PUIUX.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-car service-icon"></span>
-                    <h4 class="service-title">Data Entry</h4>
-                    <p>Click to view details</p>
+                    <h4 class="service-title">Data Entry/MIS</h4>
+                    <a href="PMIS.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-support service-icon"></span>
                     <h4 class="service-title">App Maintenance</h4>
-                    <p>Click to view details</p>
+                    <a href="PAppMaintenance.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-bank service-icon"></span>
-                    <h4 class="service-title">CMS</h4>
-                    <p>Click to view details</p>
+                    <h4 class="service-title">CMS, CRM</h4>
+                    <a href="PCMSCRM.html">Click to view details</a>
                   </div>
                 </li>
-                <li class="col-md-3 col-sm-6">
+                <li class="col-md-3 col-sm-6" data-attr="ServicesOffered">
                   <div class="single-service wow slideInUp">
                     <span class="fa fa-user-secret service-icon"></span>
-                    <h4 class="service-title">Others</h4>
-                    <p>Click to view details</p>
+                    <h4 class="service-title">ECommerce</h4>
+                    <a href="PECommerce.html">Click to view details</a>
                   </div>
                 </li>
               </ul>
@@ -420,7 +355,7 @@
             <div class="title-area">
               <h2 class="tittle">How Hiring Works</h2>
               <span class="tittle-line"></span>
-              <p>Love all the way to serve you</p>
+              <!-- <p>Simplest of proces for resource aquisition</p> -->
             </div>
             <!-- Start team content -->
             <div class="team-content">
@@ -493,7 +428,56 @@
           </div>
         </div>
       </div>
-    </div>
+      <div class="row" style="margin-top: 10%;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pricing-table-area">
+              <div class="title-area">
+                <h2 class="tittle">Hiring is also many a times quicker</h2>
+                <span class="tittle-line"></span>
+
+
+              </div>
+              <div class="pricing-table-content">
+                <ul class="price-table">
+
+                  <li class="wow slideInUp" style="width:33% ! important;">
+                    <div class="single-price">
+                      <h4 class="price-header" style="
+                      background-color: #ffffff;
+                      border-top: none;
+                      border-left: 1px solid #e4e4e4;
+                      border-bottom: 1px solid #e4e4e4;">Stage</h4>
+                      <p style="border: none;">Requirement Analysis</p>
+                      <p style="border: none;">Candidates Shortlisted</p>
+                      <p style="border: none;">Contracts & Agreements</p>
+                      <p style="border: none;">Work Commences</p>
+                    </div>
+                  </li>
+                  <li class="wow slideInUp" style="width:33% ! important;">
+                    <div class="single-price">
+                      <h4 class="price-header">Traditional Hiring</h4>
+                      <p>1 week</p>
+                      <p>2 weeks</p>
+                      <p>3 weeks</p>
+                      <p>4 weeks</p>
+                    </div>
+                  </li>
+                  <li class="wow slideInUp" style="font-weight: bold;width:33% ! important;">
+                    <div class="single-price standard-price">
+                      <h4 class="price-header">At NLC</h4>
+                      <p>2 hrs</p>
+                      <p>5 hrs</p>
+                      <p>1 day</p>
+                      <p>2 days</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   <!-- Start Team action -->
 
@@ -505,16 +489,15 @@
         <div class="col-md-12">
           <div class="pricing-table-area">
             <div class="title-area">
-              <h2 class="tittle">Developer(s) and Team Hiring Models</h2>
+              <h2 class="tittle">Developer(s) Hiring Models</h2>
               <span class="tittle-line"></span>
-              <p>We have tried our best to provide our clients robust and flexible hiring models. We welcome your ideas for your desired team</p>
+              <p>We strive to provide our clients robust and flexible hiring models</p>
             </div>
             <div class="pricing-table-content">
               <ul class="price-table">
-                <li class="wow slideInUp">
+                <li class="wow slideInUp" style="width:33% ! important;">
                   <div class="single-price standard-price">
-                    <h4 class="price-header">Monthly</h4>
-                    <!-- <span class="price-amount">Widely Opted for Small Projects</span> -->
+                    <h4 class="price-header">Monthly/Full Time</h4>
                     <p>Monthly Billing</p>
                     <p>No Hidden Costs</p>
                     <p>Pay Only For Measurable Work</p>
@@ -522,22 +505,10 @@
                     <p>No Set Up Fees</p>
                     <p>Free Lead Supervision</p>
                     <p>Daily Reporting</p>
-                    <!-- <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a> -->
                   </div>
                 </li>
-                <li class="wow slideInUp">
-                  <div class="single-price">
-                    <h4 class="price-header">Hourly</h4>
-                    <p>Hourly Billing</p>
-                    <p>No Hidden Costs</p>
-                    <p>Pay Only For Measurable Work</p>
-                    <p>X Production Hours As Desired</p>
-                    <p>No Set Up Fees</p>
-                    <p>Free Lead Supervision</p>
-                    <p>Daily Reporting</p>
-                  </div>
-                </li>
-                <li class="wow slideInUp">
+                
+                <li class="wow slideInUp" style="width:33% ! important;">
                   <div class="single-price">
                     <h4 class="price-header">Part Time</h4>
                     <p>Monthly Billing</p>
@@ -549,7 +520,7 @@
                     <p>Daily Reporting</p>
                   </div>
                 </li>
-                <li class="wow slideInUp">
+                <li class="wow slideInUp" style="width:33% ! important;">
                   <div class="single-price">
                     <h4 class="price-header">Dedicated</h4>
                     <p>Monthly Billing</p>
@@ -579,11 +550,12 @@
             <div class="title-area">
               <h2 class="tittle">Project Models</h2>
               <span class="tittle-line"></span>
-              <p>We have tried our best to provide our clients robust and flexible hiring models. We welcome your ideas for your desired team</p>
+              <p>We have tried our best to provide our clients robust and flexible hiring models. We welcome your ideas
+                for your desired team</p>
             </div>
             <div class="pricing-table-content">
               <ul class="price-table">
-                <li class="wow slideInUp" style="width:33% !important;">
+                <li class="wow slideInUp" style="width:50% !important;">
                   <div class="single-price standard-price">
                     <h4 class="price-header">Fixed Cost</h4>
                     <p>Billing With Milestones Achieved</p>
@@ -594,7 +566,7 @@
                     <p>Daily Reporting/Customized format</p>
                   </div>
                 </li>
-                <li class="wow slideInUp" style="width:33% !important;">
+                <li class="wow slideInUp" style="width:50% !important;">
                   <div class="single-price">
                     <h4 class="price-header">Project Monthly</h4>
                     <p>Monthly Billing + No Hidden Costs</p>
@@ -605,28 +577,6 @@
                     <p>Daily Reporting/Customized format</p>
                   </div>
                 </li>
-                <li class="wow slideInUp" style="width:33% !important;">
-                  <div class="single-price">
-                    <h4 class="price-header">Project Part Time</h4>
-                    <p>Monthly Billing + No Hidden Costs</p>
-                    <p>We Manage the whole Project</p>
-                    <p>Milestones Are Agreed Upon</p>
-                    <p>No Set Up Fees</p>
-                    <p>Free Lead Supervision</p>
-                    <p>Daily Reporting/Customized format</p>
-                  </div>
-                </li>
-                <!-- <li class="wow slideInUp">
-                  <div class="single-price">
-                    <h4 class="price-header">Dedicated</h4>
-                    <p>Monthly Billing With No Hidden Costs</p>
-                    <p>Pay Only For Measurable Work</p>
-                    <p>172 Production Hrs/Every Month</p>
-                    <p>No Set Up Fees</p>
-                    <p>Your Total Control</p>
-                    <p>Daily Reporting as Desired</p>
-                  </div>
-                </li> -->
               </ul>
             </div>
           </div>
@@ -635,174 +585,6 @@
     </div>
   </section>
   <!-- End Pricing Table section -->
-
-
-  <!-- Start Portfolio section -->
-  <section id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="portfolio-area">
-            <div class="title-area">
-              <h2 class="tittle">Recent portfolio</h2>
-              <span class="tittle-line"></span>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
-            </div>
-            <!-- Portfolio content -->
-            <div class="portfolio-content">
-              <!-- portfolio menu -->
-              <div class="portfolio-menu">
-                <ul>
-                  <li class="filter" data-filter="all">All</li>
-                  <li class="filter" data-filter=".branding">Branding</li>
-                  <li class="filter" data-filter=".design">Design</li>
-                  <li class="filter" data-filter=".development">Development</li>
-                  <li class="filter" data-filter=".photography">Photography</li>
-                </ul>
-              </div>
-              <!-- Portfolio container -->
-              <div id="mixit-container" class="portfolio-container">
-                <div class="single-portfolio mix branding">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small1.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big1.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix design">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small2.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix development">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small3.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big3.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix photography">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small4.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big4.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix photography">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small5.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big5.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix photography">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small6.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big6.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix photography">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small7.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big7.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-portfolio mix photography">
-                  <div class="single-item">
-                    <img src="assets/images/portfolio-img-small2.jpg" alt="img">
-                    <div class="single-item-content">
-                      <div class="portfolio-social-icon">
-                        <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i
-                            class="fa fa-eye"></i></a>
-                        <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
-                      </div>
-                      <div class="portfolio-title">
-                        <h4>Mobile application</h4>
-                        <span>UI Design</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Portfolio section -->
-
-
-  
-
   <!-- Start Testimonial section -->
   <section id="testimonial">
     <img src="assets/images/testimonial-bg.jpg" alt="img">
@@ -813,7 +595,7 @@
             <!-- Start Testimonial area -->
             <div class="testimonial-area">
               <div class="title-area">
-                <h2 class="tittle">What people say about us</h2>
+                <h2 class="tittle">What clients say about us</h2>
                 <span class="tittle-line"></span>
               </div>
               <div class="testimonial-conten">
@@ -821,24 +603,35 @@
                 <div class="testimonial-slider">
                   <!-- single slide -->
                   <div class="single-slide">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat.
-                      Duis aute irure d olor in reprehenderit</p>
+                    <p>I am very happy with the services of NLC.
+                      The choice made at the start has proved to be right.
+                    </p>
                     <div class="single-testimonial">
                       <img class="testimonial-thumb" src="assets/images/testimonial-image1.png" alt="img">
                       <p>Jonna Hike</p>
-                      <span>CEO, Themeforest</span>
+                      <span>United States, Theme forest</span>
                     </div>
                   </div>
                   <!-- single slide -->
                   <div class="single-slide">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat.
-                      Duis aute irure d olor in reprehenderit</p>
+                    <p>
+                      My expectations are met. Feeling nice to have outsourced my work to such an organization.
+                    </p>
                     <div class="single-testimonial">
                       <img class="testimonial-thumb" src="assets/images/team-member2.png" alt="img">
-                      <p>Jonna Hike</p>
-                      <span>CEO, Themeforest</span>
+                      <p>Jarret Melvin</p>
+                      <span>United States, FreeCE</span>
+                    </div>
+                  </div>
+                  <div class="single-slide">
+                    <p>
+                      At hard times and with no vision of what the end product will be, the guys gave a good show
+                      and I am happy with the end result. Proffessionalism to the very best level.
+                    </p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/team-member2.png" alt="img">
+                      <p>Jacob Oommen</p>
+                      <span>United States, CG Facilities</span>
                     </div>
                   </div>
                 </div>
@@ -852,7 +645,7 @@
   <!-- End Testimonial section -->
 
   <!-- Start from blog section -->
-  <section id="from-blog">
+  <!-- <section id="from-blog">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -863,7 +656,6 @@
               <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
                 placeat facere possimus, omnis voluptas assumenda est</p>
             </div>
-            <!-- From Blog content -->
             <div class="from-blog-content">
               <div class="row">
                 <div class="col-md-4">
@@ -926,7 +718,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- End from blog section -->
 
   <section id="client">
@@ -957,7 +749,7 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <!-- <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="contact-left wow fadeInLeft">
             <h2>Contact with us</h2>
             <address class="single-address">
@@ -979,19 +771,19 @@
               <p>Sales: sales@example.com</p>
             </address>
           </div>
-        </div>
-        <div class="col-md-8 col-sm-6 col-xs-12">
+        </div> -->
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="contact-right wow fadeInRight">
-            <h2>Send a message</h2>
+            <h2>Please let us know your requirement</h2>
             <form action="" class="contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Enter Name">
               </div>
               <div class="form-group">
                 <input type="email" class="form-control" placeholder="Enter Email">
               </div>
               <div class="form-group">
-                <textarea class="form-control"></textarea>
+                <textarea class="form-control" placeholder="Enter your query"></textarea>
               </div>
               <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
             </form>
@@ -1002,11 +794,11 @@
   </section>
   <!-- End Contact section -->
   <!-- Start Google Map -->
-  <section id="google-map">
+  <!-- <section id="google-map">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d6303.67022361714!2d144.955652!3d-37.817331!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-37.8173306!2d144.9556518!5e0!3m2!1sen!2sbd!4v1442411159706"
       width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </section>
+  </section> -->
   <!-- End Google Map -->
 
   <!-- Start Footer -->
@@ -1016,7 +808,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="footer-top-area">
-              <a class="footer-logo" href="#"><img src="assets/images/logo.jpg" alt="Logo"></a>
+              <a class="footer-logo" href="#"><img src="assets/images/NLCLogo.png" alt="Logo"></a>
               <div class="footer-social">
                 <a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
                 <a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
